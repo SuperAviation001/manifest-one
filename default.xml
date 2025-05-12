@@ -1064,4 +1064,10 @@
   </project>
   <!-- END open-source projects -->
 
+<!-- Track our Fork repos -->
+  <include name="remove.xml" />
+  <include name="lineage.xml" />
+  <include name="AndroidOne.xml" />
+<!-- Track our Fork repos -->
+
 </manifest>

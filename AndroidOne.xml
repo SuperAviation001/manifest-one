@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="AndroidOne"
+           fetch="https://github.com/AndroidOne-Experience"
+           review=".."
+           revision="refs/heads/15" />
+
+  <!-- art -->
+  <project path="art" name="art" groups="pdk" remote="AndroidOne" />
+
+  <!-- bionic -->
+  <project path="bionic" name="bionic" groups="pdk" remote="AndroidOne" />
+
+  <!-- bootable -->
+  <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" groups="pdk-cw" remote="AndroidOne" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="AndroidOne" />
+
+  <!-- build -->
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="AndroidOne" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed,sysui-studio" remote="AndroidOne" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- device -->
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="AndroidOne" />
+
+  <!-- external -->
+  <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="AndroidOne" />
+
+  <!-- frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="AndroidOne" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="AndroidOne" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="AndroidOne" />
+
+  <!-- packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="AndroidOne" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="AndroidOne" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="AndroidOne" />
+
+  <!-- system -->
+  <project path="system/core" name="system_core" groups="pdk" remote="AndroidOne" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="AndroidOne" />
+
+  <!-- vendor -->
+  <project path="vendor/aosp" name="vendor_aosp" remote="AndroidOne" />
+  <project path="vendor/gms" name="vendor_gms" remote="AndroidOne" clone-depth="1" />
+
+</manifest>
