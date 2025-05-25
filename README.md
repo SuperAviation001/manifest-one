@@ -21,7 +21,7 @@ source build/envsetup.sh
 ## 📱 Choose a Target
 
 ```bash
-lunch aosp_<device>_bp1a-user
+lunch aosp_<device>-bp1a-user
 ```
 
 > Replace `<device>` with your actual device codename.
