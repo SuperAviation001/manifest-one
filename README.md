@@ -3,7 +3,7 @@
 ## 📦 Initialize the Local Repository
 
 ```bash
-repo init -u https://github.com/AndroidOne-Experience/manifest.git -b 15 --depth=1 --git-lfs
+repo init -u https://github.com/SuperAviation001/manifest-one.git -b 15 --depth=1 --git-lfs
 ```
 
 ## 🔄 Sync the Source
