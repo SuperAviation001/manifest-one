@@ -5,6 +5,11 @@
            review=".."
            revision="refs/heads/15" />
 
+  <remote  name="schoosh"
+           fetch="https://github.com/SuperAviation001"
+           review=".."
+           revision="refs/heads/15" />
+
   <!-- art -->
   <project path="art" name="art" groups="pdk" remote="AndroidOne" />
 
@@ -42,7 +47,7 @@
 
   <!-- packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="AndroidOne" />
-  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="AndroidOne" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="schoosh" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="AndroidOne" />
 
   <!-- system -->
